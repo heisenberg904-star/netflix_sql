@@ -39,12 +39,35 @@ These queries analyze deeper business aspects such as top countries producing co
 **10 easy question**
 
 ### 1)Retrieve the titles of all movies.
-
-To retrieve the titles of all movies in the Netflix dataset, use the following SQL query:
+Solution:
 
 ```sql
 SELECT TITLE FROM NETFLIX_SQL WHERE TYPE="MOVIE";
 ```
+### 2)List the distinct countries where Netflix content is produced.
+
+Solution:
+
+```sql
+SELECT DISTINCT COUNTRY FROM NETFLIX_SQL;
+```
+
+### 3)Count the total number of TV Shows in the dataset.
+
+Solution:
+```sql
+SELECT COUNT(*) AS total_tv_shows FROM NETFLIX_SQL WHERE type = 'TV Show';
+```
+### 4)Find the earliest release year of Netflix content.
+
+Solution:
+
+```sql
+SELECT MIN(RELEASE_YEAR) AS EARLIEST_YEAR FROM NETFLIX_SQL;
+```
+
+
+
 
 
 
