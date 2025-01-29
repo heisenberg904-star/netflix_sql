@@ -38,7 +38,12 @@ These queries analyze deeper business aspects such as top countries producing co
 
 **10 easy question**
 
--- 1)Retrieve the titles of all movies.
+### 1)Retrieve the titles of all movies.
+'''sql
+
+SELECT TITLE FROM NETFLIX_SQL WHERE TYPE="MOVIE";
+
+'''
 
 ## Usage
 1. Load the Netflix dataset into a relational database.
